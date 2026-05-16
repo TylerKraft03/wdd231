@@ -237,11 +237,11 @@ footer .lastmodified {
 }
 .course-item.completed {
     background: linear-gradient(90deg, rgba(196,240,196,0.35), rgba(255,255,255,0));
-    border-color: #86C86A;
+    border-color: #244C24;
 }
 .course-item.completed .status {
     color: #244C24;
 }
 .course-item:not(.completed) .status {
-    color: #888;
+    color: #484848;
 }
