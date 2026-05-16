@@ -1,1 +1,70 @@
-Starter
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Tyler Kraft</title>
+    <meta name="author" content="Tyler Kraft">
+    <meta name="description" content="WDD 231 - Tyler Kraft">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/home.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/course-icon.jpg" alt="Course Icon" class="course-icon">
+        <span id="course-title">WDD 231</span>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Chamber</a>
+            <a href="#">Final</a>
+        </nav>
+    </header>
+        <h1 class="name">Home</h1>
+    <main>
+        <section class="card about-me">
+            <h2>About Me</h2>
+            <p>Technical Support Specialist with 4.5 years of proven customer service
+                and a foundational education in Web Development from Mountainland Technical College.
+                Currently advancing my expertise in systems and logic through a B.S. in Computer Science at BYU-Idaho.
+                I excel at leveraging problem-solving skills to diagnose and resolve complex technical issues,
+                ensuring great uptime and satisfaction.</p>
+        </section>
+        <section class="card student-photo">
+            <h2>Student Photo</h2>
+            <img src="images/me.JPG" alt="Student Photo of Tyler Kraft">
+        </section>
+        <section class="card" id="certificates">
+            <h1>Web Certificate Courses</h1>
+            <div class="filters" role="tablist" aria-label="Course filters">
+                <button id="filter-all" class="filter-btn active" role="tab">All Courses</button>
+                <button id="filter-wdd" class="filter-btn" role="tab">WDD Courses</button>
+                <button id="filter-cse" class="filter-btn" role="tab">CSE Courses</button>
+            </div>
+
+            <section id="section-all" class="course">
+                <h2>All</h2>
+                <ul class="course-list all" aria-live="polite"></ul>
+            </section>
+
+            <section id="section-cse" class="course">
+                <h2>CSE</h2>
+                <ul class="course-list cse" aria-live="polite"></ul>
+            </section>
+
+            <section id="section-wdd" class="course">
+                <h2>WDD</h2>
+                <ul class="course-list wdd" aria-live="polite"></ul>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <a href="https://www.linkedin.com/in/tyler-kraft7/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/tylerkraft03" target="_blank">GitHub</a>
+        <a href="#">Something</a>
+        <p>
+            <span id="currentyear"></span> &copy; Tyler Kraft
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
