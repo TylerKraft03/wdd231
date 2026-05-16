@@ -201,9 +201,8 @@ footer .lastmodified {
     cursor: pointer;
 }
 .filter-btn.active {
-    background: #4CAF50;
+    background: #244C24;
     color: white;
-    border-color: #244C24;
 }
 .course-list {
     list-style: none;
