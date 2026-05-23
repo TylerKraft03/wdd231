@@ -1,0 +1,93 @@
+[
+  {
+    "companyName": "Pacific Horizon Studios",
+    "address": {
+      "street": "5800 Sunset Blvd, Suite 210",
+      "city": "Hollywood",
+      "state": "CA",
+      "zip": "90028"
+    },
+    "phone": "(323) 555-0188",
+    "website": "#",
+    "image": "../images/prs.webp",
+    "membershipLevel": 3
+  },
+  {
+    "companyName": "Angeles Aero Technologies",
+    "address": {
+      "street": "2200 Grand Ave",
+      "city": "El Segundo",
+      "state": "CA",
+      "zip": "90245"
+    },
+    "phone": "(310) 555-0142",
+    "website": "#",
+    "image": "../images/aero.jpg",
+    "membershipLevel": 3
+  },
+  {
+    "companyName": "Coastal Breeze Apparel",
+    "address": {
+      "street": "820 S Los Angeles St, Alley 4",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip": "90014"
+    },
+    "phone": "(213) 555-0195",
+    "website": "#",
+    "image": "../images/coastal.jpg",
+    "membershipLevel": 2
+  },
+  {
+    "companyName": "Silicon Beach Webworks",
+    "address": {
+      "street": "1601 Ocean Front Walk",
+      "city": "Venice",
+      "state": "CA",
+      "zip": "90291"
+    },
+    "phone": "(424) 555-0111",
+    "website": "#",
+    "image": "../images/silicon.jpg",
+    "membershipLevel": 2
+  },
+  {
+    "companyName": "La Brea Culinary Group",
+    "address": {
+      "street": "620 N La Brea Ave",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip": "90036"
+    },
+    "phone": "(323) 555-0167",
+    "website": "#",
+    "image": "../images/labrea.jpeg",
+    "membershipLevel": 1
+  },
+  {
+    "companyName": "Griffith Environmental Law",
+    "address": {
+      "street": "444 S Flower St, 28th Floor",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip": "90071"
+    },
+    "phone": "(213) 555-0130",
+    "website": "#",
+    "image": "../images/griffith.jpg",
+    "membershipLevel": 3
+  },
+  {
+    "companyName": "Sunset Boulevard PR",
+    "address": {
+      "street": "9000 Sunset Blvd, Suite 800",
+      "city": "West Hollywood",
+      "state": "CA",
+      "zip": "90069"
+    },
+    "phone": "(310) 555-0104",
+    "website": "#",
+    "image": "../images/sunset.jpeg",
+    "membershipLevel": 1
+  }
+]

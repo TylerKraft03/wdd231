@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Angeles Chamber of Commerce</title>
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./styles/style.css">
+    <meta property="og:title" content="Los Angeles Chamber of Commerce">
+<meta property="og:description" content="Discover the innovative world of the Los Angeles Chamber of Commerce and explore networking opportunities, business resources, and community events.">
+<meta property="og:url" content="https://www.chamberofcommerce.com/">
+<meta property="og:image" content="./images/chamber.png">
+</head>
+<body>
+    <nav class="navbar">
+      <div class="nav-logo">
+        <img src="./images/chamber.png" alt="Chamber Logo" class="logo-img">
+        <h1 class="nav-title">Los Angeles Chamber</h1>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="./directory.html" class="nav-link">Directory</a></li>
+        <li><a href="#join" class="nav-link">Join</a></li>
+        <li><a href="#discover" class="nav-link">Discover</a></li>
+      </ul>
+    </nav>
+
+    <div class="view-controls">
+    <button id="grid-view-btn" class="active-btn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+      Grid View
+    </button>
+    <button id="list-view-btn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+      List View
+    </button>
+  </div>
+  
+  <div id="directory" class="grid-layout"></div>
+
+  <script src="./scripts/app.js"></script>
+</body>
+</html>
