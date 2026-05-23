@@ -1,13 +1,10 @@
-// 1. Fetch the data and display it on the page
 async function loadDirectory() {
   const container = document.getElementById('directory');
   
-  // Directly fetch the JSON file
   const response = await fetch('./data/members.json');
   const companies = await response.json();
   
-  // Loop through companies and create the HTML cards
-  container.innerHTML = companies.map(company => {
+    container.innerHTML = companies.map(company => {
     return `
       <div class="card">
         <img src="images/${company.image}" alt="${company.companyName} Logo">
@@ -30,25 +27,30 @@ async function loadDirectory() {
   }).join('');
 }
 
-// 2. Simple layout toggle logic
+
 function setupViewControls() {
   const container = document.getElementById('directory');
   const gridBtn = document.getElementById('grid-view-btn');
   const listBtn = document.getElementById('list-view-btn');
 
   gridBtn.addEventListener('click', () => {
-    container.className = 'grid-layout'; // Directly swap classes
+    container.className = 'grid-layout'; 
     gridBtn.className = 'active-btn';
     listBtn.className = '';
   });
 
   listBtn.addEventListener('click', () => {
-    container.className = 'list-layout'; // Directly swap classes
+    container.className = 'list-layout'; 
     listBtn.className = 'active-btn';
     gridBtn.className = '';
   });
 }
 
-// Run functions when page loads
 loadDirectory();
 setupViewControls();
+
+const today = new Date(); // Define the today variable
+const year = document.querySelector("#currentyear");
+year.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;
+
+document.getElementById("lastModified").innerHTML = `Last Modified: ${document.lastModified}`;
