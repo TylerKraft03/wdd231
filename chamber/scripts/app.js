@@ -1,5 +1,12 @@
+
+const today = new Date(); // Define the today variable
+const year = document.querySelector("#currentyear");
+year.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;
+
+document.getElementById("lastModified").innerHTML = `Last Modified: ${document.lastModified}`;
 async function loadDirectory() {
   const container = document.getElementById('directory');
+  if (!container) return;
   
   const response = await fetch('./data/members.json');
   const companies = await response.json();
@@ -32,6 +39,7 @@ function setupViewControls() {
   const container = document.getElementById('directory');
   const gridBtn = document.getElementById('grid-view-btn');
   const listBtn = document.getElementById('list-view-btn');
+  if (!container || !gridBtn || !listBtn) return;
 
   gridBtn.addEventListener('click', () => {
     container.className = 'grid-layout'; 
@@ -46,11 +54,24 @@ function setupViewControls() {
   });
 }
 
+// ---- INITIALIZE ----
+function setupMobileNav() {
+  const navToggle = document.querySelector('.nav-toggle');
+  const navMenu = document.getElementById('nav-menu');
+  if (!navToggle || !navMenu) return;
+
+  navToggle.addEventListener('click', () => {
+    const isOpen = navMenu.classList.toggle('open');
+    navToggle.classList.toggle('open', isOpen);
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    loadWeather();
+    loadSpotlights();
+    setupMobileNav();
+});
+
 loadDirectory();
 setupViewControls();
-
-const today = new Date(); // Define the today variable
-const year = document.querySelector("#currentyear");
-year.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;
-
-document.getElementById("lastModified").innerHTML = `Last Modified: ${document.lastModified}`;

@@ -9,7 +9,7 @@
     },
     "phone": "(323) 555-0188",
     "website": "#",
-    "image": "../images/prs.webp",
+    "image": "prs.webp",
     "membershipLevel": 3
   },
   {
@@ -22,7 +22,7 @@
     },
     "phone": "(310) 555-0142",
     "website": "#",
-    "image": "../images/aero.jpg",
+    "image": "aero.jpg",
     "membershipLevel": 3
   },
   {
@@ -35,7 +35,7 @@
     },
     "phone": "(213) 555-0195",
     "website": "#",
-    "image": "../images/coastal.jpg",
+    "image": "coastal.jpg",
     "membershipLevel": 2
   },
   {
@@ -48,7 +48,7 @@
     },
     "phone": "(424) 555-0111",
     "website": "#",
-    "image": "../images/silicon.jpg",
+    "image": "silicon.jpg",
     "membershipLevel": 2
   },
   {
@@ -61,7 +61,7 @@
     },
     "phone": "(323) 555-0167",
     "website": "#",
-    "image": "../images/labrea.jpeg",
+    "image": "labrea.jpeg",
     "membershipLevel": 1
   },
   {
@@ -74,7 +74,7 @@
     },
     "phone": "(213) 555-0130",
     "website": "#",
-    "image": "../images/griffith.jpg",
+    "image": "griffith.jpg",
     "membershipLevel": 3
   },
   {
@@ -87,7 +87,7 @@
     },
     "phone": "(310) 555-0104",
     "website": "#",
-    "image": "../images/sunset.jpeg",
+    "image": "sunset.jpeg",
     "membershipLevel": 1
   }
 ]

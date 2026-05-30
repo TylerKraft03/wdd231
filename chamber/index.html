@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Angeles Chamber of Commerce</title>
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./styles/homepage.css">
+    <meta property="og:title" content="Los Angeles Chamber of Commerce">
+<meta property="og:description" content="Discover the innovative world of the Los Angeles Chamber of Commerce and explore networking opportunities, business resources, and community events.">
+<meta property="og:url" content="https://www.chamberofcommerce.com/">
+<meta property="og:image" content="./images/chamber.png">
+</head>
+<body>
+    <nav class="navbar">
+      <div class="nav-logo">
+        <img src="./images/chamber.png" alt="Chamber Logo" class="logo-img">
+        <h1 class="nav-title">Los Angeles Chamber</h1>
+      </div>
+      <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Open navigation menu">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="./index.html" class="nav-link">Home</a></li>
+        <li><a href="./directory.html" class="nav-link">Directory</a></li>
+        <li><a href="#join" class="nav-link">Join</a></li>
+        <li><a href="#discover" class="nav-link">Discover</a></li>
+      </ul>
+    </nav>
+    <main class="home-grid">
+        
+        <section class="hero">
+            <picture>
+                <img src="images/los-angeles.avif" alt="Scenic view of our beautiful community business district" class="hero-img">
+            </picture>
+            <div class="cta-box">
+                <h2>Grow Your Business With Us</h2>
+                <p>Join the Chamber of Commerce today and connect with local leaders.</p>
+                <a href="join.html" class="cta-btn">Join the Chamber</a>
+            </div>
+        </section>
+
+        <section class="eventscard">
+            <h2>Upcoming Events</h2>
+            <article class="event-item">
+                <h3>Annual Business Expo</h3>
+                <p><strong>Date:</strong> next Friday, 6:00 PM</p>
+                <p>Network with over 50 local vendors and community leaders.</p>
+            </article>
+            <article class="event-item">
+                <h3>Community Clean-Up</h3>
+                <p><strong>Date:</strong> next Saturday, 9:00 AM</p>
+                <p>Help keep our business district clean and welcoming.</p>
+            </article>
+        </section>
+
+        <section class="weathercard">
+            <h2>Current Weather</h2>
+            <div id="weather-info">
+                <p>Temperature: <span id="current-temp">--</span>°F</p>
+                <p>Condition: <span id="weather-desc"></span></p>
+            </div>
+            <hr>
+            <h3>3-Day Forecast</h3>
+            <div id="forecast" class="forecast-grid">
+                <div class="forecast-day">--: --°F</div>
+                <div class="forecast-day">--: --°F</div>
+                <div class="forecast-day">--: --°F</div>
+            </div>
+        </section>
+
+        <section class="spotlights">
+            <h2>Member Spotlights</h2>
+            <div id="spotlight-container" class="spotlight-grid"></div>
+        </section>
+    </main>
+    <footer>
+        <a href="https://www.linkedin.com/in/tyler-kraft7/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/tylerkraft03" target="_blank">GitHub</a>
+        <a href="#">Something</a>
+        <p>
+            <span id="currentyear"></span> &copy; Tyler Kraft
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
+  <script src="./scripts/app.js"></script>
+  <script src="./scripts/homepage.js"></script>
+
+  
+</body>
