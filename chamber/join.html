@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join the Chamber</title>
+  <link rel="icon" href="./images/favicon.ico">
+  <link rel="stylesheet" href="./styles/homepage.css">
+  <link rel="stylesheet" href="./styles/join.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">
+      <img src="./images/chamber.png" alt="Chamber Logo" class="logo-img">
+      <h1 class="nav-title">Los Angeles Chamber</h1>
+    </div>
+    <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Open navigation menu">
+      <span class="hamburger"></span>
+    </button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="./index.html" class="nav-link">Home</a></li>
+      <li><a href="./directory.html" class="nav-link">Directory</a></li>
+      <li><a href="./join.html" class="nav-link" aria-current="page">Join</a></li>
+      <li><a href="#" class="nav-link">Discover</a></li>
+    </ul>
+  </nav>
+
+  <main class="join-grid">
+    <section class="join-panel">
+      <header class="page-header">
+        <h1>Join the Chamber</h1>
+        <p>Complete the membership application to connect your business with community events, marketing support, education, and local networking.</p>
+      </header>
+
+      <form method="get" action="thankyou.html" class="membership-form" autocomplete="on">
+        <label>
+          <span>First Name</span>
+          <input
+            type="text"
+            name="firstName"
+            title="Applicant first name"
+            autocomplete="given-name"
+            required
+          >
+        </label>
+
+        <label>
+          <span>Last Name</span>
+          <input
+            type="text"
+            name="lastName"
+            title="Applicant last name"
+            autocomplete="family-name"
+            required
+          >
+        </label>
+
+        <label>
+          <span>Organizational Title</span>
+          <input
+            type="text"
+            name="organizationTitle"
+            title="Organizational title"
+            autocomplete="organization-title"
+            placeholder="Executive Director"
+          >
+        </label>
+
+        <label>
+          <span>Email Address</span>
+          <input
+            type="email"
+            name="email"
+            title="Email address"
+            autocomplete="email"
+            placeholder="example@example.com"
+            required
+          >
+        </label>
+
+        <label>
+          <span>Mobile Phone Number</span>
+          <input
+            type="tel"
+            name="phone"
+            title="Mobile phone number"
+            autocomplete="tel"
+            placeholder="(555) 123-4567"
+            required
+          >
+        </label>
+
+        <label>
+          <span>Business / Organization Name</span>
+          <input
+            type="text"
+            name="organizationName"
+            title="Business or organization name"
+            autocomplete="organization"
+            required
+          >
+        </label>
+
+        <label>
+          <span>Membership Level</span>
+          <select name="membershipLevel" title="Membership level" required>
+            <option value="" disabled selected>Select a membership</option>
+            <option value="np">NP Membership (no fee)</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Organization Description</span>
+          <textarea
+            name="description"
+            title="Business organization description"
+            rows="5"
+            placeholder="Tell us about your mission, customers, and goals."
+          ></textarea>
+        </label>
+
+        <input type="hidden" name="timestamp" id="timestamp">
+
+        <input type="submit" value="Submit Application" class="submit-button">
+      </form>
+    </section>
+
+    <aside class="membership-cards">
+      <h2>Membership Level Benefits</h2>
+      <p>Choose from four levels of membership to get the support and promotion your business deserves.</p>
+
+      <div class="cards-grid">
+        <article class="membership-card">
+          <h3>NP Membership</h3>
+          <p>Nonprofit organizations join with no fee and receive community support, event promotion, and access to volunteer resources.</p>
+          <a href="#" class="more-info" data-modal="modal-np">Learn More</a>
+        </article>
+
+        <article class="membership-card">
+          <h3>Bronze Membership</h3>
+          <p>Entry-level membership with access to networking events, email newsletters, and business introduction opportunities.</p>
+          <a href="#" class="more-info" data-modal="modal-bronze">Learn More</a>
+        </article>
+
+        <article class="membership-card">
+          <h3>Silver Membership</h3>
+          <p>Expanded visibility with featured business listings, training workshops, and expanded event discounts.</p>
+          <a href="#" class="more-info" data-modal="modal-silver">Learn More</a>
+        </article>
+
+        <article class="membership-card">
+          <h3>Gold Membership</h3>
+          <p>Full premium benefits including homepage spotlight placement, VIP event access, advertising support, and strategic promotion.</p>
+          <a href="#" class="more-info" data-modal="modal-gold">Learn More</a>
+        </article>
+      </div>
+    </aside>
+
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+
+    <section class="modal" id="modal-np">
+      <header>
+        <div>
+          <h3>NP Membership Benefits</h3>
+          <p>Free membership for nonprofit organizations.</p>
+        </div>
+        <button class="modal-close" aria-label="Close NP membership details">×</button>
+      </header>
+      <p>NP members receive:</p>
+      <ul>
+        <li>Zero membership fee</li>
+        <li>Community and volunteer program promotion</li>
+        <li>Access to nonprofit events and workshops</li>
+        <li>Inclusion in our nonprofit spotlight directory</li>
+      </ul>
+    </section>
+
+    <section class="modal" id="modal-bronze">
+      <header>
+        <div>
+          <h3>Bronze Membership Benefits</h3>
+          <p>Great for smaller businesses getting started in the community.</p>
+        </div>
+        <button class="modal-close" aria-label="Close Bronze membership details">×</button>
+      </header>
+      <p>Bronze members receive:</p>
+      <ul>
+        <li>Access to monthly networking events</li>
+        <li>Chamber email newsletter promotion</li>
+        <li>Listing in the local business directory</li>
+        <li>Discounts on training and small advertising packages</li>
+      </ul>
+    </section>
+
+    <section class="modal" id="modal-silver">
+      <header>
+        <div>
+          <h3>Silver Membership Benefits</h3>
+          <p>Perfect for growing businesses seeking stronger exposure.</p>
+        </div>
+        <button class="modal-close" aria-label="Close Silver membership details">×</button>
+      </header>
+      <p>Silver members receive:</p>
+      <ul>
+        <li>Featured business listing and directory priority</li>
+        <li>Special pricing for event sponsorship and trade show booths</li>
+        <li>Invitations to member-only training sessions</li>
+        <li>Advertising highlights in newsletters and social media</li>
+      </ul>
+    </section>
+
+    <section class="modal" id="modal-gold">
+      <header>
+        <div>
+          <h3>Gold Membership Benefits</h3>
+          <p>Best for businesses looking for maximum impact and VIP presence.</p>
+        </div>
+        <button class="modal-close" aria-label="Close Gold membership details">×</button>
+      </header>
+      <p>Gold members receive:</p>
+      <ul>
+        <li>Homepage spotlight promotions</li>
+        <li>VIP access to major chamber events</li>
+        <li>Dedicated advertising opportunities and featured stories</li>
+        <li>Priority invitations to leadership roundtables and training sessions</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <a href="https://www.linkedin.com/in/tyler-kraft7/" target="_blank">LinkedIn</a>
+    <a href="https://github.com/tylerkraft03" target="_blank">GitHub</a>
+    <a href="#">Something</a>
+    <p>
+      <span id="currentyear"></span> &copy; Tyler Kraft
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script src="./scripts/app.js"></script>
+  <script src="./scripts/join.js"></script>
+</body>
+</html>

@@ -66,6 +66,12 @@ footer .lastmodified {
   transition: all 0.3s ease;
 }
 
+.nav-link.active,
+.nav-link[aria-current="page"] {
+  background-color: #1d4ed8;
+  color: #e0e7ff;
+}
+
 .nav-link:hover {
   background-color: #1e293b;
   color: #e0e7ff;
