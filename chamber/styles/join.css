@@ -256,6 +256,19 @@
   }
 }
 
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+footer .lastmodified,
+footer #lastModified {
+  color: #424242;
+  font-size: 14px;
+}
+
 @media (max-width: 680px) {
   .join-grid {
     padding: 0 1rem 1.5rem;

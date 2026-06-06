@@ -74,6 +74,19 @@
   text-decoration: underline;
 }
 
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+footer .lastmodified,
+footer #lastModified {
+  color: #424242;
+  font-size: 14px;
+}
+
 @media (max-width: 680px) {
   .thank-you-panel {
     padding: 1.5rem 1rem 1.5rem;
