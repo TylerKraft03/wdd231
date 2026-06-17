@@ -426,13 +426,12 @@ select {
   box-shadow: var(--shadow);
 }
 
-.footer-video-card iframe {
-  width: 100%;
-  min-height: 320px;
-  height: 420px;
-  border: 0;
-  border-radius: 12px;
+.footer-video-link {
+  display: inline-block;
   margin-top: 0.75rem;
+  color: var(--accent-dark);
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 .footer-links {
