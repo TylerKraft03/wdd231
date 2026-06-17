@@ -428,7 +428,8 @@ select {
 
 .footer-video-card iframe {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  min-height: 320px;
+  height: 420px;
   border: 0;
   border-radius: 12px;
   margin-top: 0.75rem;
