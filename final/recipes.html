@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popcorn Recipes | Easy Snack Ideas</title>
+  <meta name="description" content="Find easy popcorn recipes, mixing tips, and snack pairings for parties, movie nights, and everyday treats.">
+  <meta name="author" content="Popcorn Studio">
+  <meta property="og:title" content="Popcorn Recipes | Easy Snack Ideas">
+  <meta property="og:description" content="Try simple popcorn recipes and snack combinations for any occasion.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/favicon.svg">
+  <meta property="og:url" content="https://example.com/final/recipes.html">
+  <meta property="og:site_name" content="Popcorn Studio">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-bubble">🍿</span>
+        <span>Popcorn Studio</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="flavors.html">Flavors</a>
+        <a href="recipes.html" class="active">Recipes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero small-hero">
+      <div class="container">
+        <p class="eyebrow">Recipe ideas</p>
+        <h1>Snack recipes worth repeating</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container recipe-layout">
+        <div>
+          <h2>Pick your favorite flavor</h2>
+          <form id="recipe-form" class="recipe-form" action="recipes-action.html" method="get">
+            <label for="first-name">First name</label>
+            <input id="first-name" name="first-name" type="text" required>
+
+            <label for="last-name">Last name</label>
+            <input id="last-name" name="last-name" type="text" required>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+
+            <label for="favorite-flavor">Favorite popcorn flavor</label>
+            <select id="favorite-flavor" name="favorite-flavor">
+              <option value="Classic Butter">Classic Butter</option>
+              <option value="Caramel Sea Salt">Caramel Sea Salt</option>
+              <option value="Sweet Chili Crunch">Sweet Chili Crunch</option>
+              <option value="Cheesy Garlic Kick">Cheesy Garlic Kick</option>
+              <option value="Cinnamon Sugar Pop">Cinnamon Sugar Pop</option>
+            </select>
+            <button type="submit" class="button primary">See my favorite</button>
+          </form>
+          <div id="recipe-summary" class="recipe-summary"></div>
+        </div>
+        <div id="recipe-cards" class="recipe-cards"></div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="modal" id="recipe-modal">
+    <form method="dialog" class="modal-panel">
+      <button class="modal-close" type="submit" aria-label="Close dialog">×</button>
+      <div id="recipe-modal-content"></div>
+    </form>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="index.html">Back home</a>
+      </div>
+      <div class="footer-meta">
+        <p><span id="currentyear"></span> © Popcorn Studio</p>
+        <p id="lastModified"></p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="scripts/recipes.js"></script>
+  <script src="scripts/footer.js"></script>
+</body>
+</html>

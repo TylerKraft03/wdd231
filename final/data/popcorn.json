@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Butter",
+    "category": "Savory",
+    "rating": 4.9,
+    "price": "$4.50",
+    "emoji": "🧈",
+    "description": "A rich, buttery blend that keeps the flavor simple and satisfying.",
+    "ingredients": ["Popcorn kernels", "Butter", "Sea salt"],
+    "bestFor": "Movie night"
+  },
+  {
+    "id": 2,
+    "name": "Sea Salt Caramel",
+    "category": "Sweet",
+    "rating": 4.8,
+    "price": "$5.25",
+    "emoji": "🍬",
+    "description": "Sweet caramel notes balanced with a crisp sea-salt finish.",
+    "ingredients": ["Caramel glaze", "Brown sugar", "Sea salt"],
+    "bestFor": "Dessert snack"
+  },
+  {
+    "id": 3,
+    "name": "Cheddar Jalapeño",
+    "category": "Spicy",
+    "rating": 4.7,
+    "price": "$4.90",
+    "emoji": "🌶️",
+    "description": "Cheesy, creamy, and just the right amount of heat.",
+    "ingredients": ["Cheddar powder", "Jalapeño flakes", "Oil"],
+    "bestFor": "Game day"
+  },
+  {
+    "id": 4,
+    "name": "Cinnamon Sugar",
+    "category": "Sweet",
+    "rating": 4.6,
+    "price": "$4.80",
+    "emoji": "🍭",
+    "description": "A warm, cozy mix of sugar and spice that feels like a treat.",
+    "ingredients": ["Cinnamon", "Sugar", "Vanilla drizzle"],
+    "bestFor": "Afternoon snack"
+  },
+  {
+    "id": 5,
+    "name": "Truffle Parmesan",
+    "category": "Savory",
+    "rating": 4.9,
+    "price": "$5.75",
+    "emoji": "🧀",
+    "description": "A gourmet style blend with earthy truffle and sharp parmesan.",
+    "ingredients": ["Parmesan", "Truffle oil", "Black pepper"],
+    "bestFor": "Dinner party"
+  },
+  {
+    "id": 6,
+    "name": "Honey BBQ",
+    "category": "Savory",
+    "rating": 4.5,
+    "price": "$4.70",
+    "emoji": "🍖",
+    "description": "Sweet honey meets smoky barbecue for a bold snack bite.",
+    "ingredients": ["Honey", "BBQ seasoning", "Paprika"],
+    "bestFor": "Backyard cookout"
+  },
+  {
+    "id": 7,
+    "name": "Sweet Chili Crunch",
+    "category": "Spicy",
+    "rating": 4.8,
+    "price": "$5.10",
+    "emoji": "🔥",
+    "description": "A sweet heat blend with crunchy chili bits in every bite.",
+    "ingredients": ["Sweet chili glaze", "Chili flakes", "Toasted sesame"],
+    "bestFor": "Snack bowls"
+  },
+  {
+    "id": 8,
+    "name": "Maple Pecans",
+    "category": "Sweet",
+    "rating": 4.7,
+    "price": "$5.40",
+    "emoji": "🥜",
+    "description": "A sweet maple finish with toasted pecan crunch.",
+    "ingredients": ["Maple syrup", "Pecan pieces", "Cinnamon"],
+    "bestFor": "Holiday gatherings"
+  },
+  {
+    "id": 9,
+    "name": "Pizza Party",
+    "category": "Savory",
+    "rating": 4.6,
+    "price": "$4.65",
+    "emoji": "🍕",
+    "description": "Tastes like your favorite pizza night in a crunchy snack.",
+    "ingredients": ["Tomato powder", "Mozzarella", "Italian herbs"],
+    "bestFor": "Teen hangouts"
+  },
+  {
+    "id": 10,
+    "name": "Strawberry Cheesecake",
+    "category": "Sweet",
+    "rating": 4.8,
+    "price": "$5.30",
+    "emoji": "🍓",
+    "description": "Sweet strawberry and creamy cheesecake flavors in one bite.",
+    "ingredients": ["Strawberry powder", "Cream cheese", "Sugar"],
+    "bestFor": "Birthday parties"
+  },
+  {
+    "id": 11,
+    "name": "Buffalo Ranch",
+    "category": "Spicy",
+    "rating": 4.4,
+    "price": "$4.85",
+    "emoji": "🐃",
+    "description": "Tangy ranch and zesty buffalo spice for bold flavor lovers.",
+    "ingredients": ["Buffalo spice", "Ranch seasoning", "Buttermilk powder"],
+    "bestFor": "Tailgates"
+  },
+  {
+    "id": 12,
+    "name": "Cocoa Pretzel",
+    "category": "Sweet",
+    "rating": 4.5,
+    "price": "$4.95",
+    "emoji": "🍫",
+    "description": "Rich cocoa and toasted pretzel pieces create a crunchy blend.",
+    "ingredients": ["Cocoa powder", "Pretzel bits", "Chocolate drizzle"],
+    "bestFor": "Late-night snack"
+  },
+  {
+    "id": 13,
+    "name": "Lemon Pepper",
+    "category": "Savory",
+    "rating": 4.3,
+    "price": "$4.60",
+    "emoji": "🍋",
+    "description": "Bright citrus and peppery seasoning keep the snack fresh and lively.",
+    "ingredients": ["Lemon zest", "Black pepper", "Sea salt"],
+    "bestFor": "Picnics"
+  },
+  {
+    "id": 14,
+    "name": "Cookies & Cream",
+    "category": "Sweet",
+    "rating": 4.9,
+    "price": "$5.20",
+    "emoji": "🍪",
+    "description": "A creamy, dessert-inspired blend with sweet cookie crumbs.",
+    "ingredients": ["Cookie crumbs", "Vanilla powder", "Creamy glaze"],
+    "bestFor": "Dessert table"
+  },
+  {
+    "id": 15,
+    "name": "Ghost Pepper",
+    "category": "Spicy",
+    "rating": 4.2,
+    "price": "$5.00",
+    "emoji": "👻",
+    "description": "Made for heat seekers with lingering spice and smoky depth.",
+    "ingredients": ["Ghost pepper", "Smoked paprika", "Salt"],
+    "bestFor": "Adventure snacks"
+  }
+]

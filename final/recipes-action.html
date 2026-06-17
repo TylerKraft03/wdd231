@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Plan Result</title>
+  <meta name="description" content="Displays submitted popcorn recipe preferences and planning details.">
+  <meta name="author" content="Popcorn Studio">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-bubble">🍿</span>
+        <span>Popcorn Studio</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1>Your favorite popcorn pick</h1>
+        <div id="result" class="recipe-summary"></div>
+        <a class="button secondary" href="recipes.html">Back to recipes</a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const firstName = params.get('first-name') || '';
+    const lastName = params.get('last-name') || '';
+    const email = params.get('email') || '';
+    const favoriteFlavor = params.get('favorite-flavor') || 'Caramel Sea Salt';
+
+    document.getElementById('result').innerHTML = `
+      <h2>Thanks for sharing your pick</h2>
+      <p><strong>Name:</strong> ${firstName} ${lastName}</p>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Favorite flavor:</strong> ${favoriteFlavor}</p>
+      <p>Your go-to popcorn choice is <strong>${favoriteFlavor}</strong> — perfect for your next movie night treat.</p>
+    `;
+  </script>
+</body>
+</html>

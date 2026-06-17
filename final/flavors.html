@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popcorn Flavors | Explore Our Signature Blends</title>
+  <meta name="description" content="Browse a curated selection of popcorn flavors, ratings, and snack details for every kind of craving.">
+  <meta name="author" content="Popcorn Studio">
+  <meta property="og:title" content="Popcorn Flavors | Explore Our Signature Blends">
+  <meta property="og:description" content="Browse unique popcorn flavors and find your next favorite snack.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/favicon.svg">
+  <meta property="og:url" content="https://example.com/final/flavors.html">
+  <meta property="og:site_name" content="Popcorn Studio">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-bubble">🍿</span>
+        <span>Popcorn Studio</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="flavors.html" class="active">Flavors</a>
+        <a href="recipes.html">Recipes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero small-hero">
+      <div class="container">
+        <p class="eyebrow">Flavor finder</p>
+        <h1>Choose your perfect popcorn</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filter-row">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="Sweet">Sweet</button>
+          <button class="filter-btn" data-filter="Savory">Savory</button>
+          <button class="filter-btn" data-filter="Spicy">Spicy</button>
+        </div>
+        <div id="catalog" class="catalog-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="modal" id="flavor-modal">
+    <form method="dialog" class="modal-panel">
+      <button class="modal-close" type="submit" aria-label="Close dialog">×</button>
+      <div id="modal-content"></div>
+    </form>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="recipes.html">See recipes</a>
+      </div>
+      <div class="footer-meta">
+        <p><span id="currentyear"></span> © Popcorn Studio</p>
+        <p id="lastModified"></p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="scripts/flavors.js"></script>
+  <script src="scripts/footer.js"></script>
+</body>
+</html>
